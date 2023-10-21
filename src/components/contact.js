@@ -75,7 +75,7 @@ function Contact() {
 }
 
 const IconAndTextHolder = (props) => (
-    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-0">
+    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-2 md:px-2">
         {props.children}
     </div>
 );

@@ -11,7 +11,7 @@ function AboutUs() {
                     <h1 className="text-slate-100 text-4xl text-center">
                         O nas
                     </h1>
-                    <p className="text-slate-100 text-lg text-center pt-4">
+                    <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
                         Grupa PUT.NET to studenckie Koło naukowe działające na
                         Wydziale Informatyki oraz Wydziale Elektrycznym
                         Politechniki Poznańskiej. Tworzą je osoby pasjonujące
