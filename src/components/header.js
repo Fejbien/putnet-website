@@ -44,9 +44,7 @@ function Header() {
             </div>
             <div className="flex pr-10 h-full">
                 <NavButton href="#" text="home" />
-                <NavButton href="#" text="o nas" />
-                <NavButton href="#" text="prelekcje" />
-                <NavButton href="#" text="hall of fame" />
+                <NavButton href="#aboutUs" text="o nas" />
                 <NavButton href="#" text="kontakt" />
                 <NavButton href="#" text="faq" />
             </div>

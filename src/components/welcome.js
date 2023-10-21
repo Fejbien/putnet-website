@@ -21,7 +21,7 @@ function Welcome() {
                 id="codingVideo"
                 className="bg-cover
                 w-full z-10
-                overflow-hidden bg-red-500
+                overflow-hidden
                 absolute top-1/2 left-1/2
                 transform -translate-x-1/2 -translate-y-1/2
                 object-cover"
