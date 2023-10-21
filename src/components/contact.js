@@ -30,13 +30,13 @@ function Contact() {
                     <h1 className="text-slate-100 text-4xl text-left md:text-center">
                         Kontakt:
                     </h1>
-                    <div className="flex flex-row items-center md:justify-tart mt-6 md:mt-0">
+                    <IconAndTextHolder>
                         <img
                             src={pinIcon}
                             alt="pin icon"
                             className="mr-4"
                         ></img>
-                        <p className="text-slate-100 font-medium text-2xl hover:text-orange-100 transition hover:underline md:text-center">
+                        <LinkText>
                             <a
                                 href={addressURL}
                                 target="_blank"
@@ -44,35 +44,46 @@ function Contact() {
                             >
                                 Adres: ul. Piotrowo 2, 60-965 Poznań
                             </a>
-                        </p>
-                    </div>
-                    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-0">
+                        </LinkText>
+                    </IconAndTextHolder>
+                    <IconAndTextHolder>
                         <img
                             src={mailIcon}
                             alt="mail icon"
                             className="mr-4"
                         ></img>
-                        <p className="text-slate-100 font-medium text-2xl hover:text-orange-100 transition hover:underline md:text-center">
+                        <LinkText>
                             <a href={mailURL}>Email: tutaj email jakis</a>
-                        </p>
-                    </div>
-
-                    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-0">
+                        </LinkText>
+                    </IconAndTextHolder>
+                    <IconAndTextHolder>
                         <img
                             src={fbIcon}
                             alt="mail icon"
                             className="mr-4"
                         ></img>
-                        <p className="text-slate-100 font-medium text-2xl hover:text-orange-100 transition hover:underline md:text-center">
+                        <LinkText>
                             <a href={fbURL}>
                                 Facebook: Grupa .NET Politechnika Poznańska
                             </a>
-                        </p>
-                    </div>
+                        </LinkText>
+                    </IconAndTextHolder>
                 </div>
             </div>
         </div>
     );
 }
+
+const IconAndTextHolder = (props) => (
+    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-0">
+        {props.children}
+    </div>
+);
+
+const LinkText = (props) => (
+    <p className="text-slate-100 font-medium text-2xl hover:text-orange-100 transition hover:underline md:text-center">
+        {props.children}
+    </p>
+);
 
 export default Contact;
