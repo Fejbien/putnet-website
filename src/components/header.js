@@ -39,13 +39,13 @@ function Header() {
             className="z-30 fixed top-0 h-16 w-full flex justify-between 
         items-center bg-slate-900 shadow-2xl -translate-y-16 transition"
         >
-            <div className="flex pl-10">
+            <div className="flex pl-10 md:hidden">
                 <img src={logo} alt="PUT.NET Logo" className="h-16" />
             </div>
-            <div className="flex pr-10 h-full">
+            <div className="flex pr-10 h-full md:w-full md:pr-0">
                 <NavButton href="#" text="home" />
                 <NavButton href="#aboutUs" text="o nas" />
-                <NavButton href="#" text="kontakt" />
+                <NavButton href="#contact" text="kontakt" />
                 <NavButton href="#" text="faq" />
             </div>
         </header>
@@ -60,7 +60,10 @@ function NavButton({ href, text }) {
             bg-slate-900 transition
             hover:bg-slate-800"
         >
-            <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased">
+            <span
+                className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased
+            md:text-sm"
+            >
                 {text}
             </span>
         </a>
