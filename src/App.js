@@ -7,11 +7,7 @@ function App() {
         <div className="bg-slate-800">
             <Header />
             <Welcome />
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <PageBody />
         </div>
     );
 }
