@@ -10,7 +10,7 @@ function Footer() {
         >
             <div className="flex my-6 md:flex-col-reverse">
                 <div className="w-[80%] flex items-center md:w-full">
-                    <span className="text-slate-100 px-10">
+                    <span className="text-slate-100 px-10 md:text-center">
                         Koło naukowe PUT.NET na Wydziale Informatyki działa od
                         2004 roku, a na Wydziale Elektrycznym od roku 2005.
                         Serdecznie zapraszamy na nasze spotkania, eventy i

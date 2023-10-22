@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Dialog } from "@headlessui/react";
+import React, { useEffect, useState, Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 
 import titledLogo from "../media/titledLogo.svg";
 import logo from "../media/pureLogo.svg";
@@ -77,41 +77,60 @@ function Header() {
                         onClick={() => setIsOpen(true)}
                         className="md:flex md:w-auto"
                     >
-                        <img src={menu} alt="menu icon"></img>
+                        <img src={menu} alt="menu icon" loading="lazy"></img>
                     </button>
                     <div className="md:flex md:h-full md:justify-center md:items-center">
                         <img src={logo} alt="logo" className="h-[80%]"></img>
                     </div>
 
-                    <img src={menu} alt="menu icon" className="invisible"></img>
+                    <img
+                        src={menu}
+                        alt="menu icon"
+                        className="invisible"
+                        loading="lazy"
+                    ></img>
                 </div>
             </div>
 
-            <Dialog
-                as="div"
-                open={isOpen}
-                onClose={() => setIsOpen(false)}
-                className="relative z-50 top-0 left-0"
-            >
-                <Dialog.Panel className="w-[66%] h-screen bg-slate-800 fixed z-60 top-0 left-0 flex flex-col">
-                    <div className="flex w-full justify-center items-center border-b-[1px] border-b-white mb-4">
-                        <img
-                            src={titledLogo}
-                            alt="titled logo"
-                            className="w-[80%] h-[80%]"
-                        ></img>
-                    </div>
+            <Transition appear show={isOpen} as={Fragment}>
+                <Dialog
+                    as="div"
+                    open={isOpen}
+                    onClose={() => setIsOpen(false)}
+                    className="relative z-50 top-0 left-0"
+                >
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-200"
+                        enterFrom="-translate-x-full"
+                        enterTo="translate-x-0"
+                        leave="ease-out duration-200"
+                        leaveFrom="translate-x-0"
+                        leaveTo="-translate-x-full"
+                    >
+                        <Dialog.Panel className="w-[66%] h-screen bg-slate-800 fixed z-60 top-0 left-0 flex flex-col">
+                            <div className="flex w-full justify-center items-center border-b-[1px] border-b-white mb-4">
+                                <img
+                                    src={titledLogo}
+                                    alt="titled logo"
+                                    className="w-[80%] h-[80%]"
+                                    loading="lazy"
+                                ></img>
+                            </div>
 
-                    <div className="flex flex-col w-full justify-center items-center">
-                        {navigations}
-                    </div>
-                    <div className="flex h-full w-full justify-center items-end">
-                        <h1 className="text-slate-100 my-6 text-4xl font-semibold">
-                            PUT<span className="text-red-800">.</span>NET
-                        </h1>
-                    </div>
-                </Dialog.Panel>
-            </Dialog>
+                            <div className="flex flex-col w-full justify-center items-center">
+                                {navigations}
+                            </div>
+                            <div className="flex h-full w-full justify-center items-end">
+                                <h1 className="text-slate-100 my-6 text-4xl font-semibold">
+                                    PUT<span className="text-red-800">.</span>
+                                    NET
+                                </h1>
+                            </div>
+                        </Dialog.Panel>
+                    </Transition.Child>
+                </Dialog>
+            </Transition>
         </header>
     );
 }
