@@ -35,6 +35,7 @@ function Welcome() {
                         src={titleLogo}
                         alt="Title Logo"
                         className="z-20 w-auto h-auto max-w-full max-h-full"
+                        loading="lazy"
                     />
                     <h1 className="z-20 text-slate-100 font-bold text-2xl text-center">
                         Koło naukowe Politechniki Poznańskiej

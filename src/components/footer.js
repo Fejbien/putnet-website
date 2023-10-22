@@ -23,6 +23,7 @@ function Footer() {
                             src={putLogo}
                             alt="put Logo"
                             className="w-full"
+                            loading="lazy"
                         ></img>
                     </div>
                 </div>

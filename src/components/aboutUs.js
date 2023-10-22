@@ -34,6 +34,7 @@ function AboutUs() {
                             src={aboutUsImg}
                             alt="Team work about us"
                             className="h-auto w-auto"
+                            loading="lazy"
                         ></img>
                     </div>
                 </div>

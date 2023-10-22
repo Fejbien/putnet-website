@@ -19,6 +19,7 @@ function Contact() {
                         title="PUTMap"
                         allowFullScreen
                         className="w-full h-full min-h-[200px]"
+                        loading="lazy"
                     ></iframe>
                 </div>
                 <div className="w-1/2 flex-col items-center md:w-full">
@@ -30,6 +31,7 @@ function Contact() {
                             src={pinIcon}
                             alt="pin icon"
                             className="mr-4"
+                            loading="lazy"
                         ></img>
                         <LinkText>
                             <a
@@ -46,6 +48,7 @@ function Contact() {
                             src={mailIcon}
                             alt="mail icon"
                             className="mr-4"
+                            loading="lazy"
                         ></img>
                         <LinkText>
                             <a href={urls["mailURL"]}>
@@ -58,6 +61,7 @@ function Contact() {
                             src={fbIcon}
                             alt="mail icon"
                             className="mr-4"
+                            loading="lazy"
                         ></img>
                         <LinkText>
                             <a href={urls["fbURL"]}>

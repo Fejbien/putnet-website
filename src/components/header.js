@@ -46,7 +46,12 @@ function Header() {
         items-center bg-slate-900 shadow-2xl -translate-y-16 transition"
         >
             <div className="flex pl-10 md:hidden">
-                <img src={logo} alt="PUT.NET Logo" className="h-16" />
+                <img
+                    src={logo}
+                    alt="PUT.NET Logo"
+                    className="h-16"
+                    loading="lazy"
+                />
             </div>
             <div className="flex pr-10 h-full md:w-full md:pr-0">
                 {navigations}
