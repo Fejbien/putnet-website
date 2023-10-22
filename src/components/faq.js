@@ -3,8 +3,8 @@ import { Disclosure } from "@headlessui/react";
 import faq from "../data/faq.js";
 
 function Faq() {
-    let QnAsHTML = faq.map((QnARow) => {
-        return <QnA question={QnARow[0]} answer={QnARow[1]} />;
+    let QnAsHTML = faq.map((QnARow, index) => {
+        return <QnA key={index} question={QnARow[0]} answer={QnARow[1]} />;
     });
 
     return (

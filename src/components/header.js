@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Dialog } from "@headlessui/react";
+
+import titledLogo from "../media/titledLogo.svg";
 import logo from "../media/pureLogo.svg";
+import menu from "../media/menuIcon.svg";
+
 import navs from "../data/navs.js";
 
 function Header() {
     const handleScroll = () => {
-        console.log(window.scrollY);
+        //console.log(window.scrollY);
         if (window.scrollY > 0) {
             if (
                 document
@@ -37,8 +42,19 @@ function Header() {
     }, []);
 
     let navigations = Object.keys(navs).map((key, index) => {
-        return <NavButton id={index} href={navs[key]} text={key} />;
+        return (
+            <NavButton
+                key={index}
+                href={navs[key]}
+                text={key}
+                onClick={() => {
+                    setIsOpen(false);
+                }}
+            />
+        );
     });
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <header
@@ -53,24 +69,64 @@ function Header() {
                     loading="lazy"
                 />
             </div>
-            <div className="flex pr-10 h-full md:w-full md:pr-0">
-                {navigations}
+            <div className="flex pr-10 h-full md:hidden">{navigations}</div>
+
+            <div className="hidden md:flex md:justify-center md:items-center md:h-full md:w-full">
+                <div className="md:flex md:w-full md:h-full md:justify-between md:items-center">
+                    <button
+                        onClick={() => setIsOpen(true)}
+                        className="md:flex md:w-auto"
+                    >
+                        <img src={menu} alt="menu icon"></img>
+                    </button>
+                    <div className="md:flex md:h-full md:justify-center md:items-center">
+                        <img src={logo} alt="logo" className="h-[80%]"></img>
+                    </div>
+
+                    <img src={menu} alt="menu icon" className="invisible"></img>
+                </div>
             </div>
+
+            <Dialog
+                as="div"
+                open={isOpen}
+                onClose={() => setIsOpen(false)}
+                className="relative z-50 top-0 left-0"
+            >
+                <Dialog.Panel className="w-[66%] h-screen bg-slate-800 fixed z-60 top-0 left-0 flex flex-col">
+                    <div className="flex w-full justify-center items-center border-b-[1px] border-b-white mb-4">
+                        <img
+                            src={titledLogo}
+                            alt="titled logo"
+                            className="w-[80%] h-[80%]"
+                        ></img>
+                    </div>
+
+                    <div className="flex flex-col w-full justify-center items-center">
+                        {navigations}
+                    </div>
+                    <div className="flex h-full w-full justify-center items-end">
+                        <h1 className="text-slate-100 my-6 text-4xl font-semibold">
+                            PUT<span className="text-red-800">.</span>NET
+                        </h1>
+                    </div>
+                </Dialog.Panel>
+            </Dialog>
         </header>
     );
 }
 
-function NavButton({ href, text }) {
+function NavButton({ href, text, onClick }) {
     return (
         <a
             href={href}
-            className="h-full flex items-center pl-4 pr-4 shadow-inner
-            bg-slate-900 transition
-            hover:bg-slate-800"
+            className="h-full flex items-center pl-4 pr-4 shadow-inner bg-slate-900 transition hover:bg-slate-800
+            md:bg-slate-800 md:hover:bg-slate-700 md:shadow-none md:my-2"
+            onClick={onClick}
         >
             <span
                 className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased
-            md:text-sm"
+            md:text-2xl"
             >
                 {text}
             </span>

@@ -86,7 +86,7 @@ const LinkText = (props) => (
         className="text-slate-100 font-medium text-2xl 
         hover:text-orange-100 transition hover:underline 
         md:text-center md:text-lg"
-        style={{ "text-wrap": "balance" }}
+        style={{ textWrap: "balance" }}
     >
         {props.children}
     </p>
