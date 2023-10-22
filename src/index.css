@@ -6,5 +6,8 @@ body {
     margin: 0;
     font-family: Monda, sans-serif;
     -webkit-font-smoothing: antialiased;
+}
+
+html {
     scroll-behavior: smooth;
 }

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import logo from "../media/pureLogo.svg";
+import navs from "../data/navs.js";
 
 function Header() {
     const handleScroll = () => {
@@ -24,6 +25,7 @@ function Header() {
                     .classList.add("-translate-y-16");
         }
     };
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, {
             passive: true,
@@ -34,6 +36,10 @@ function Header() {
         };
     }, []);
 
+    let navigations = Object.keys(navs).map((key, index) => {
+        return <NavButton id={index} href={navs[key]} text={key} />;
+    });
+
     return (
         <header
             className="z-30 fixed top-0 h-16 w-full flex justify-between 
@@ -43,10 +49,7 @@ function Header() {
                 <img src={logo} alt="PUT.NET Logo" className="h-16" />
             </div>
             <div className="flex pr-10 h-full md:w-full md:pr-0">
-                <NavButton href="#" text="home" />
-                <NavButton href="#aboutUs" text="o nas" />
-                <NavButton href="#contact" text="kontakt" />
-                <NavButton href="#" text="faq" />
+                {navigations}
             </div>
         </header>
     );

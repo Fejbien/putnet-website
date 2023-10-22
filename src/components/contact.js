@@ -4,14 +4,9 @@ import fbIcon from "../media/facebookIcon.svg";
 import mailIcon from "../media/mailIcon.svg";
 import pinIcon from "../media/pinIcon.svg";
 
-function Contact() {
-    const fbURL = "https://www.facebook.com/put.net/";
-    const mailURL = "mailto:przykladowy@email.com";
-    const addressURL =
-        "https://www.google.com/maps/place/Politechnika+Poznańska,+Kampus+Piotrowo,+Piotrowo+2,+60-965+Poznań/@52.4037202,16.9481836,18z/data=!3m1!4b1!4m6!3m5!1s0x47045b13735ceb35:0x9804598c2b48cc91!8m2!3d52.403719!4d16.9490959!16s%2Fg%2F11gzzgvm9";
-    const mapURL =
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.1631663339854!2d16.946907215803165!3d52.40371897979235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b13735ceb35%3A0x9804598c2b48cc91!2sPiotrowo%202%2C%2060-965%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1569964957035!5m2!1spl!2spl";
+import urls from "../data/urls.js";
 
+function Contact() {
     return (
         <div className="flex flex-row w-full justify-center items-center relative">
             <div id="contact" className="absolute -top-20"></div>
@@ -20,7 +15,7 @@ function Contact() {
                 <div className="flex flex-col w-1/2 min-h-[200px] md:w-full">
                     <iframe
                         id="PUTMap"
-                        src={mapURL}
+                        src={urls["mapURL"]}
                         title="PUTMap"
                         allowFullScreen
                         className="w-full h-full min-h-[200px]"
@@ -38,7 +33,7 @@ function Contact() {
                         ></img>
                         <LinkText>
                             <a
-                                href={addressURL}
+                                href={urls["addressURL"]}
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -53,7 +48,9 @@ function Contact() {
                             className="mr-4"
                         ></img>
                         <LinkText>
-                            <a href={mailURL}>Email: tutaj email jakis</a>
+                            <a href={urls["mailURL"]}>
+                                Email: przykladowy@gmail.com
+                            </a>
                         </LinkText>
                     </IconAndTextHolder>
                     <IconAndTextHolder>
@@ -63,7 +60,7 @@ function Contact() {
                             className="mr-4"
                         ></img>
                         <LinkText>
-                            <a href={fbURL}>
+                            <a href={urls["fbURL"]}>
                                 Facebook: Grupa .NET Politechnika Poznańska
                             </a>
                         </LinkText>
@@ -81,7 +78,12 @@ const IconAndTextHolder = (props) => (
 );
 
 const LinkText = (props) => (
-    <p className="text-slate-100 font-medium text-2xl hover:text-orange-100 transition hover:underline md:text-center">
+    <p
+        className="text-slate-100 font-medium text-2xl 
+        hover:text-orange-100 transition hover:underline 
+        md:text-center md:text-lg"
+        style={{ "text-wrap": "balance" }}
+    >
         {props.children}
     </p>
 );
