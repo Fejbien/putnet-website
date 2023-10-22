@@ -1,7 +1,7 @@
 const navs = {
     home: "#",
-    aboutUs: "#aboutUs",
-    contact: "#contact",
+    "o nas": "#aboutUs",
+    kontakt: "#contact",
     faq: "#faq",
 };
 
