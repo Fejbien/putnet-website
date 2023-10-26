@@ -2,7 +2,14 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            height: {
+                screen: [
+                    "100vh /* fallback for Opera, IE and etc. */",
+                    "100dvh",
+                ],
+            },
+        },
         screens: {
             "2xl": { max: "1535px" },
             // => @media (max-width: 1535px) { ... }
