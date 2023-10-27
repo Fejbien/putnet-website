@@ -3,9 +3,10 @@ import Header from "./components/header";
 import Welcome from "./components/welcome";
 import AboutUs from "./components/aboutUs";
 import Contact from "./components/contact";
+import Projects from "./components/projects";
+import Faq from "./components/faq";
 import Footer from "./components/footer";
 import Divider from "./components/divider";
-import Faq from "./components/faq";
 
 function App() {
     return (
@@ -24,6 +25,8 @@ function PageBody() {
             <AboutUs />
             <Divider />
             <Contact />
+            <Divider />
+            <Projects />
             <Divider />
             <Faq />
         </div>

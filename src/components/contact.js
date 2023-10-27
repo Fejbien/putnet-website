@@ -52,7 +52,7 @@ function Contact() {
                         ></img>
                         <LinkText>
                             <a href={urls["mailURL"]}>
-                                Email: przykladowy@gmail.com
+                                Email: przykladowydotnet@gmail.com
                             </a>
                         </LinkText>
                     </IconAndTextHolder>

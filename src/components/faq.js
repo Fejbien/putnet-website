@@ -1,5 +1,5 @@
 import React from "react";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import faq from "../data/faq.js";
 
 function Faq() {
@@ -30,12 +30,21 @@ function QnA({ question, answer }) {
             >
                 <span>{question}</span>
             </Disclosure.Button>
-            <Disclosure.Panel
-                className="px-4 pt-4 text-xl text-slate-100 text-center"
-                style={{ "text-wrap": "balance" }}
+            <Transition
+                enter="transition duration-100 ease-out"
+                enterFrom="transform scale-95 opacity-0"
+                enterTo="transform scale-100 opacity-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="transform scale-100 opacity-100"
+                leaveTo="transform scale-95 opacity-0"
             >
-                {answer}
-            </Disclosure.Panel>
+                <Disclosure.Panel
+                    className="px-4 pt-4 text-xl text-slate-100 text-center"
+                    style={{ "text-wrap": "balance" }}
+                >
+                    {answer}
+                </Disclosure.Panel>
+            </Transition>
         </Disclosure>
     );
 }
