@@ -24,7 +24,7 @@ function Contact() {
                 </div>
                 <div className="w-1/2 flex-col items-center md:w-full">
                     <h1 className="text-slate-100 text-4xl text-left md:text-center">
-                        Kontakt:
+                        Kontakt
                     </h1>
                     <IconAndTextHolder>
                         <img
@@ -39,7 +39,7 @@ function Contact() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                Adres: ul. Piotrowo 2, 60-965 Poznań
+                                ul. Piotrowo 2, 60-965 Poznań
                             </a>
                         </LinkText>
                     </IconAndTextHolder>
@@ -52,7 +52,7 @@ function Contact() {
                         ></img>
                         <LinkText>
                             <a href={urls["mailURL"]}>
-                                Email: przykladowydotnet@gmail.com
+                                przykladowydotnet@gmail.com
                             </a>
                         </LinkText>
                     </IconAndTextHolder>
@@ -65,7 +65,7 @@ function Contact() {
                         ></img>
                         <LinkText>
                             <a href={urls["fbURL"]}>
-                                Facebook: Grupa .NET Politechnika Poznańska
+                                Grupa .NET Politechnika Poznańska
                             </a>
                         </LinkText>
                     </IconAndTextHolder>
