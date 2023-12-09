@@ -1,3 +1,11 @@
+/*
+Dodawanie pytania:
+    [
+        "Pytanie",
+        "Odpowiedź",
+    ],
+*/
+
 const faq = [
     [
         "Czy trzeba chodzić cyklicznie na nasze spotkania?",

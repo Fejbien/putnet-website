@@ -1,6 +1,19 @@
 import React from "react";
+import projectsData from "../data/projects.js";
 
 function Projects() {
+    let projects = Object.keys(projectsData).map((key, index) => {
+        return (
+            <ProjectCard
+                key={index}
+                title={key}
+                description={projectsData[key].description}
+                linksData={projectsData[key].links}
+                image={projectsData[key].image}
+            />
+        );
+    });
+
     return (
         <div className="flex w-full justify-center relative">
             <div id="projects" className="absolute -top-20"></div>
@@ -9,45 +22,44 @@ function Projects() {
                     Nasze projekty
                 </h1>
                 <div className="mt-4 flex w-full bg-slate-100 border border-slate-100 rounded-3xl justify-evenly flex-wrap">
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    {projects}
                 </div>
             </div>
         </div>
     );
 }
 
-function ProjectCard() {
+function ProjectCard({ title, description, linksData, image }) {
+    if (!linksData) linksData = {};
+    let links = Object.keys(linksData).map((key, index) => {
+        return (
+            <a
+                key={index}
+                href={linksData[key]}
+                className="underline text-lg font-bold hover:text-orange-100"
+            >
+                {key}
+            </a>
+        );
+    });
+
     return (
         <div
-            className="flex flex-row p-6 bg-slate-800 m-2 text-slate-100 border rounded-3xl
+            className="flex flex-row p-6 bg-slate-800 m-2 text-slate-100 border rounded-3xl w-full
         md:flex-col"
         >
-            <div className="flex flex-col w-fit overflow-hidden">
-                <h1 className="text-4xl font-bold">Nazwa</h1>
-                <p className="mt-2 mr-10 md:max-w-[25ch] md:text-ellipsis md:whitespace-nowrap md:overflow-hidden md:pb-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Maecenas volutpat blandit aliquam etiam erat velit
-                    scelerisque in dictum. Cursus risus at ultrices mi tempus
-                    imperdiet nulla malesuada pellentesque. Diam vel quam
-                    elementum pulvinar etiam non quam lacus suspendisse. Gravida
-                    arcu ac tortor dignissim. Velit scelerisque in dictum non
-                    consectetur. Nulla facilisi etiam dignissim diam quis enim
-                    lobortis scelerisque fermentum. Cursus sit amet dictum sit
-                    amet justo. Vulputate ut pharetra sit amet aliquam id diam.
-                    Viverra adipiscing at in tellus integer feugiat scelerisque.
-                </p>
-                <a
-                    href="/"
-                    className="text-white font-bold underline hover:text-red-900 md:pb-2"
-                >
-                    Zobacz wiecej
-                </a>
+            <div className="flex flex-col w-4/5 overflow-hidden md:w-full md:mb-4">
+                <h1 className="text-4xl font-bold">{title}</h1>
+                <p className="mt-2 md:pb-2 ">{description}</p>
+                {linksData && <div className="flex w-full gap-4">{links}</div>}
             </div>
-            <div className="flex ">
-                <img src="https://placehold.co/600" alt="placeholder"></img>
+            <div className="flex justify-center h-fit md:h-fit md:justify-start">
+                <img
+                    src={image}
+                    alt={title + " logo"}
+                    className="max-h-[300px] min-h-[150px] 
+                                md:max-h-[150px] md:min-h-[75px]"
+                ></img>
             </div>
         </div>
     );

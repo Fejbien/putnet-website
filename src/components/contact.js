@@ -3,6 +3,7 @@ import React from "react";
 import fbIcon from "../media/facebookIcon.svg";
 import mailIcon from "../media/mailIcon.svg";
 import pinIcon from "../media/pinIcon.svg";
+import discordIcon from "../media/discordIcon.svg";
 
 import urls from "../data/urls.js";
 
@@ -26,52 +27,46 @@ function Contact() {
                     <h1 className="text-slate-100 text-4xl text-left md:text-center">
                         Kontakt
                     </h1>
-                    <IconAndTextHolder>
-                        <img
-                            src={pinIcon}
-                            alt="pin icon"
-                            className="mr-4"
-                            loading="lazy"
-                        ></img>
-                        <LinkText>
-                            <a
-                                href={urls["addressURL"]}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                ul. Piotrowo 2, 60-965 Poznań
-                            </a>
-                        </LinkText>
-                    </IconAndTextHolder>
-                    <IconAndTextHolder>
-                        <img
-                            src={mailIcon}
-                            alt="mail icon"
-                            className="mr-4"
-                            loading="lazy"
-                        ></img>
-                        <LinkText>
-                            <a href={urls["mailURL"]}>
-                                przykladowydotnet@gmail.com
-                            </a>
-                        </LinkText>
-                    </IconAndTextHolder>
-                    <IconAndTextHolder>
-                        <img
-                            src={fbIcon}
-                            alt="mail icon"
-                            className="mr-4"
-                            loading="lazy"
-                        ></img>
-                        <LinkText>
-                            <a href={urls["fbURL"]}>
-                                Grupa .NET Politechnika Poznańska
-                            </a>
-                        </LinkText>
-                    </IconAndTextHolder>
+                    <a
+                        href={urls["addressURL"]}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <LinkInsides
+                            text="ul. Piotrowo 2, 60-965 Poznań"
+                            icon={pinIcon}
+                        />
+                    </a>
+                    <a href={urls["mailURL"]}>
+                        <LinkInsides
+                            text="przykladowydotnet@gmail.com"
+                            icon={mailIcon}
+                        />
+                    </a>
+                    <a href={urls["fbURL"]}>
+                        <LinkInsides
+                            text="Grupa .NET Politechnika Poznańska"
+                            icon={fbIcon}
+                        />
+                    </a>
+                    <a href={urls["discordURL"]}>
+                        <LinkInsides
+                            text="Serwer discord PUT.NET"
+                            icon={discordIcon}
+                        />
+                    </a>
                 </div>
             </div>
         </div>
+    );
+}
+
+function LinkInsides({ text, icon }) {
+    return (
+        <IconAndTextHolder>
+            <img src={icon} alt="icon" className="mr-4" loading="lazy"></img>
+            <LinkText>{text}</LinkText>
+        </IconAndTextHolder>
     );
 }
 
