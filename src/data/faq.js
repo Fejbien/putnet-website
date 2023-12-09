@@ -1,8 +1,8 @@
 /*
-Dodawanie pytania:
+Adding a question:
     [
-        "Pytanie",
-        "Odpowiedź",
+        "Question",
+        "Answer",
     ],
 */
 

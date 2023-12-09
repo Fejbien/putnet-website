@@ -1,24 +1,24 @@
 import PUTNETLogo from "../media/pureLogo.svg";
 
 /*
-Dodawanie projektu:
-    "Nazwa projektu": {
-        description: "Opis projektu",
+Adding a project: 
+    "Project Name": { 
+        description: "Project description", 
         links: { 
-            "Nazwa linku": "https://adres/",
-            "Nazwa linku 2": "https://adres2/",
-            ...
-        },
-        image: logo,
-        underConstruction: true/false
+            "Link Name": "https://address/", 
+            "Link Name 2": "https://address2/",
+            ..., 
+        }, 
+        image: logo, 
+        underConstruction: true/false 
     },
 
-    - klucz "Nazwa projektu" jest wymagane
-    - pole "description" jest wymagane
-    - pole "links" jest opcjonalne, sklada sie z mapy, gdzie klucz to nazwa linku, a wartosc to adres
-    - pole "image" jest opcjonalne, przyjmuje zainportowany obrazek (najlepiej w formacie .svg aspect ratio 1:1)
-    - pole "underConstruction" jest wymagane, przyjmuje wartosc true/false, domyslnie false, 
-        jesli true, to pod nazwa projektu wyswietli sie "W trakcie tworzenia! |Dolacz itp itd...| <- jako link do discorda" 
+    - the key "Project Name" is required
+    - the "description" field is required
+    - the "links" field is optional, it consists of a map where the key is the link name and the value is the address
+    - the "image" field is optional, it accepts an imported image (preferably in .svg format with a 1:1 aspect ratio)
+    - the "underConstruction" field is required, it accepts a value of true/false, set to false if nothing to be added to description, 
+        if true, "Under construction! |Join etc...| <- as a link to Discord" will be added below description.
 */
 
 const projectsData = {
