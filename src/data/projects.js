@@ -10,12 +10,15 @@ Dodawanie projektu:
             ...
         },
         image: logo,
+        underConstruction: true/false
     },
 
-    klucz "Nazwa projektu" jest wymagane
-    pole "description" jest wymagane
-    pole "links" jest opcjonalne, sklada sie z mapy, gdzie klucz to nazwa linku, a wartosc to adres
-    pole "image" przyjmuje zainportowany obrazek (najlepiej w formacie .svg aspect ratio 1:1)
+    - klucz "Nazwa projektu" jest wymagane
+    - pole "description" jest wymagane
+    - pole "links" jest opcjonalne, sklada sie z mapy, gdzie klucz to nazwa linku, a wartosc to adres
+    - pole "image" jest opcjonalne, przyjmuje zainportowany obrazek (najlepiej w formacie .svg aspect ratio 1:1)
+    - pole "underConstruction" jest wymagane, przyjmuje wartosc true/false, domyslnie false, 
+        jesli true, to pod nazwa projektu wyswietli sie "W trakcie tworzenia! |Dolacz do nas na| <- jako link do discorda" 
 */
 
 const projectsData = {
@@ -27,10 +30,11 @@ const projectsData = {
             GitHub: "https://github.com/Fejbien/putnet-website",
         },
         image: PUTNETLogo,
+        underConstruction: false,
     },
     TimeTracko: {
-        description: "Aplikacja do śledzenia czasu pracy",
-        image: ":D",
+        description: "Aplikacja do śledzenia czasu pracy.",
+        underConstruction: true,
     },
 };
 

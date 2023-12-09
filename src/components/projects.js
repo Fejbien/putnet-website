@@ -1,5 +1,6 @@
 import React from "react";
 import projectsData from "../data/projects.js";
+import urls from "../data/urls.js";
 
 function Projects() {
     let projects = Object.keys(projectsData).map((key, index) => {
@@ -10,6 +11,7 @@ function Projects() {
                 description={projectsData[key].description}
                 linksData={projectsData[key].links}
                 image={projectsData[key].image}
+                underConstruction={projectsData[key].underConstruction}
             />
         );
     });
@@ -29,7 +31,13 @@ function Projects() {
     );
 }
 
-function ProjectCard({ title, description, linksData, image }) {
+function ProjectCard({
+    title,
+    description,
+    linksData,
+    image,
+    underConstruction,
+}) {
     if (!linksData) linksData = {};
     let links = Object.keys(linksData).map((key, index) => {
         return (
@@ -48,18 +56,40 @@ function ProjectCard({ title, description, linksData, image }) {
             className="flex flex-row p-6 bg-slate-800 m-2 text-slate-100 border rounded-3xl w-full
         md:flex-col"
         >
-            <div className="flex flex-col w-4/5 overflow-hidden md:w-full md:mb-4">
+            <div className="flex flex-col w-5/6 overflow-hidden md:w-full">
                 <h1 className="text-4xl font-bold">{title}</h1>
-                <p className="mt-2 md:pb-2 ">{description}</p>
-                {linksData && <div className="flex w-full gap-4">{links}</div>}
+                <p className="mt-2 md:pb-2 ">
+                    {description}{" "}
+                    {underConstruction && (
+                        <>
+                            <br />
+                            <span className="text-red-500">
+                                W trakcie tworzenia!{" "}
+                                <a
+                                    href={urls["discordURL"]}
+                                    className="underline hover:text-orange-100"
+                                >
+                                    Dołącz do nas na Discordzie i dowiedz się
+                                    więcej!
+                                </a>
+                            </span>
+                        </>
+                    )}
+                </p>
+                {linksData && (
+                    <div className="flex w-full gap-4 first-letter:first-line:justify-start">
+                        {links}
+                    </div>
+                )}
             </div>
-            <div className="flex justify-center h-fit md:h-fit md:justify-start">
-                <img
-                    src={image}
-                    alt={title + " logo"}
-                    className="max-h-[300px] min-h-[150px] 
-                                md:max-h-[150px] md:min-h-[75px]"
-                ></img>
+            <div className="flex justify-center h-fit md:h-fit md:mt-2">
+                {image && (
+                    <img
+                        src={image}
+                        alt={title + " logo"}
+                        className="max-h-[150px] min-h-[75px]"
+                    ></img>
+                )}
             </div>
         </div>
     );
