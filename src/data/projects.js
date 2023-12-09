@@ -18,7 +18,7 @@ Dodawanie projektu:
     - pole "links" jest opcjonalne, sklada sie z mapy, gdzie klucz to nazwa linku, a wartosc to adres
     - pole "image" jest opcjonalne, przyjmuje zainportowany obrazek (najlepiej w formacie .svg aspect ratio 1:1)
     - pole "underConstruction" jest wymagane, przyjmuje wartosc true/false, domyslnie false, 
-        jesli true, to pod nazwa projektu wyswietli sie "W trakcie tworzenia! |Dolacz do nas na| <- jako link do discorda" 
+        jesli true, to pod nazwa projektu wyswietli sie "W trakcie tworzenia! |Dolacz itp itd...| <- jako link do discorda" 
 */
 
 const projectsData = {
