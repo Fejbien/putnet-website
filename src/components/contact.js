@@ -78,9 +78,9 @@ const IconAndTextHolder = (props) => (
 
 const LinkText = (props) => (
     <p
-        className="text-slate-100 font-medium text-2xl 
+        className="text-slate-100 font-medium text-2xl break-words
         hover:text-orange-100 transition hover:underline 
-        md:text-center md:text-lg"
+        md:text-center md:text-lg md:w-full"
         style={{ textWrap: "balance" }}
     >
         {props.children}
