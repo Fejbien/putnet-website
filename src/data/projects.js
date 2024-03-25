@@ -45,6 +45,7 @@ const projectsData = {
         },
     },
     "Studencki USOS": {
+        description: "Studencki USOS dla Politechniki Poznańskiej",
         underConstruction: true,
     },
     "eMapa Politechniki Poznańskiej": {
