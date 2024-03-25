@@ -12,7 +12,7 @@ function Contact() {
         <div className="flex flex-row w-full justify-center items-center relative">
             <div id="contact" className="absolute -top-20"></div>
 
-            <div className="flex flex-row w-[70%] gap-10 md:w-full md:flex-col-reverse">
+            <div className="flex flex-row-reverse w-[70%] gap-10 md:w-full md:flex-col-reverse">
                 <div className="flex flex-col w-1/2 min-h-[200px] md:w-full">
                     <iframe
                         id="PUTMap"
@@ -39,7 +39,7 @@ function Contact() {
                     </a>
                     <a href={urls["mailURL"]}>
                         <LinkInsides
-                            text="przykladowydotnet@gmail.com"
+                            text="mikolaj.diakowski@student.put.poznan.pl"
                             icon={mailIcon}
                         />
                     </a>
