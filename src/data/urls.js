@@ -2,9 +2,10 @@ const urls = {
     fbURL: "https://www.facebook.com/put.net/",
     mailURL: "mailto:przykladowy@email.com",
     addressURL:
-        "https://www.google.com/maps/place/Politechnika+Poznańska,+Kampus+Piotrowo,+Piotrowo+2,+60-965+Poznań/@52.4037202,16.9481836,18z/data=!3m1!4b1!4m6!3m5!1s0x47045b13735ceb35:0x9804598c2b48cc91!8m2!3d52.403719!4d16.9490959!16s%2Fg%2F11gzzgvm9",
-    mapURL: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.1631663339854!2d16.946907215803165!3d52.40371897979235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b13735ceb35%3A0x9804598c2b48cc91!2sPiotrowo%202%2C%2060-965%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1569964957035!5m2!1spl!2spl",
+        "https://www.google.com/maps/place/Dormitory+No.+1+Poznan+University+of+Technology/@52.4006774,16.9514883,19z/data=!4m15!1m8!3m7!1s0x47045b13735ceb35:0x9804598c2b48cc91!2sPolitechnika+Poznańska,+Kampus+Piotrowo,+Piotrowo+2,+60-965+Poznań!3b1!8m2!3d52.403719!4d16.9490959!16s%2Fg%2F11gzzgvm9!3m5!1s0x47045b121cb3b30d:0xc6d414a2e4ade855!8m2!3d52.4000955!4d16.9522743!16s%2Fg%2F1tplp01z?entry=ttu",
+    mapURL: "https://www.google.com/maps/embed/v1/place?q=Ds1+poznan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
     discordURL: "https://discord.gg/zKkKxy7Rhf",
+    registerURL: "https://forms.gle/XNz8QGethSseRjoi9",
 };
 
 export default urls;

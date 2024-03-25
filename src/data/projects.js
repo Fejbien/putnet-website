@@ -36,6 +36,26 @@ const projectsData = {
         description: "Aplikacja do śledzenia czasu pracy.",
         underConstruction: true,
     },
+    "Katalog eksponatów Muzeum Atari": {
+        description:
+            "System katalogowania eksponatów dla Muzeum Atari w Poznaniu",
+        underConstruction: true,
+        links: {
+            Strona: "https://atarimuzeum.pl/",
+        },
+    },
+    "Studencki USOS": {
+        underConstruction: true,
+    },
+    "eMapa Politechniki Poznańskiej": {
+        description: "Mapa Politechniki Poznańskiej",
+        underConstruction: true,
+    },
+
+    "Europejska Karta Studenta": {
+        description: "Europejska Karta Studenta",
+        underConstruction: true,
+    },
 };
 
 export default projectsData;

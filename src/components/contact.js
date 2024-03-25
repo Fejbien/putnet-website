@@ -33,7 +33,7 @@ function Contact() {
                         rel="noreferrer"
                     >
                         <LinkInsides
-                            text="ul. Piotrowo 2, 60-965 Poznań"
+                            text="ul. Jana Pawła II 28, 61-139 Poznań"
                             icon={pinIcon}
                         />
                     </a>

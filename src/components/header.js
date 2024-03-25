@@ -45,7 +45,8 @@ function Header() {
         return (
             <NavButton
                 key={index}
-                href={navs[key]}
+                target={navs[key].target}
+                href={navs[key].link}
                 text={key}
                 onClick={() => {
                     setIsOpen(false);
@@ -135,10 +136,11 @@ function Header() {
     );
 }
 
-function NavButton({ href, text, onClick }) {
+function NavButton({ href, text, onClick, target }) {
     return (
         <a
             href={href}
+            target={target}
             className="h-full flex items-center pl-4 pr-4 shadow-inner bg-slate-900 transition hover:bg-slate-800
             md:bg-slate-800 md:hover:bg-slate-700 md:shadow-none md:my-2"
             onClick={onClick}

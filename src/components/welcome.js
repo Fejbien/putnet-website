@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import codingVideo from "../media/coding.mp4";
 import titleLogo from "../media/titledLogo.svg";
 
+import urls from "../data/urls.js";
+
 function Welcome() {
     const [videoHeight, setVideoHeight] = useState(window.innerHeight);
     useEffect(() => {
@@ -19,12 +21,8 @@ function Welcome() {
                 muted
                 loop
                 id="codingVideo"
-                className="bg-cover
-                w-full z-10
-                overflow-hidden
-                absolute top-1/2 left-1/2
-                transform -translate-x-1/2 -translate-y-1/2
-                object-cover"
+                className="bg-cover w-full z-10 overflow-hidden absolute top-1/2 left-1/2
+                transform -translate-x-1/2 -translate-y-1/2 object-cover"
                 style={{ height: videoHeight }}
             >
                 <source src={codingVideo} type="video/mp4" />
@@ -37,12 +35,35 @@ function Welcome() {
                         className="z-20 w-auto h-auto max-w-full max-h-full"
                         loading="lazy"
                     />
-                    <h1 className="z-20 text-slate-100 font-bold text-2xl text-center">
+                    <h1 className="z-20 text-slate-100 font-extrabold text-3xl text-center pt-2">
                         Koło naukowe Politechniki Poznańskiej
-                    </h1>
+                    </h1>{" "}
+                    <div className="flex justify-center items-center mt-8 md:flex-col">
+                        <WelcomeButton href={urls.fbURL} text="Nasz Facebook" />
+                        <WelcomeButton
+                            href={urls.registerURL}
+                            text="Dołącz do nas!"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
+    );
+}
+
+function WelcomeButton({ href, text, target }) {
+    return (
+        <a
+            href={href}
+            target={target}
+            className="z-20 h-full flex items-center pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+            transition hover:bg-red-800
+            md:w-[90%] md:text-center md:pt-2 md:pb-2"
+        >
+            <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased md:text-3xl">
+                {text}
+            </span>
+        </a>
     );
 }
 
