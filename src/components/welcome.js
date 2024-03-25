@@ -28,11 +28,11 @@ function Welcome() {
                 <source src={codingVideo} type="video/mp4" />
             </video>
             <div className="flex w-full h-full justify-center items-center">
-                <div className="flex w-[40%] h-[40%] justify-center items-center flex-col md:w-[80%] md:h-[80%]">
+                <div className="flex w-[40%] h-[40%] justify-center items-center flex-col md:w-[70%] md:h-[70%]">
                     <img
                         src={titleLogo}
                         alt="Title Logo"
-                        className="z-20 w-auto h-auto max-w-full max-h-full"
+                        className="z-20 w-auto h-auto max-w-full max-h-full md:w-[80%] md:h-[80%] object-contain"
                         loading="lazy"
                     />
                     <h1 className="z-20 text-slate-100 font-extrabold text-3xl text-center pt-2">
@@ -58,7 +58,7 @@ function WelcomeButton({ href, text, target }) {
             target={target}
             className="z-20 h-full flex items-center pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
             transition hover:bg-red-800
-            md:w-[90%] md:text-center md:pt-2 md:pb-2"
+            md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
         >
             <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased md:text-3xl">
                 {text}
