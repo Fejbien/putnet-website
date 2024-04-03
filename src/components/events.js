@@ -30,7 +30,7 @@ function Events() {
                         href="https://forms.gle/dpBnQPk9sxEJSR166"
                         target="_blank"
                         rel="noreferrer"
-                        className="z-20 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+                        className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
                                 transition hover:bg-red-800 justify-center
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
                     >
