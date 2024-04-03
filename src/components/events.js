@@ -1,5 +1,7 @@
 import React from "react";
 
+import eventLogo from "../media/eventLogo.png";
+
 function Events() {
     return (
         <div className="flex flex-row w-full justify-center items-center relative">
@@ -25,23 +27,24 @@ function Events() {
                         przepyszna pizza! Nie przegap tej wyjątkowej okazji
                     </p>
                     <a
-                        href="#"
+                        href="https://forms.gle/dpBnQPk9sxEJSR166"
                         target="_blank"
+                        rel="noreferrer"
                         className="z-20 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
-                                transition hover:bg-red-800
+                                transition hover:bg-red-800 justify-center
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
                     >
-                        <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased md:text-3xl">
+                        <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal text-center antialiased md:text-3xl">
                             Zarejestruj się!
                         </span>
                     </a>
                 </div>
                 <div className="w-1/2 flex items-center justify-center md:w-full">
-                    <div className="h-fit">
+                    <div className="h-fit md:pr-5 md:pl-5">
                         <img
-                            src="https://placehold.co/400x400"
-                            alt="Team work about us"
-                            className="h-auto w-auto"
+                            src={eventLogo}
+                            alt="Logo wydarzenia PUT.NET Software Engineering Talks"
+                            className="h-auto w-auto rounded-lg border-2 border-white"
                             loading="lazy"
                         ></img>
                     </div>

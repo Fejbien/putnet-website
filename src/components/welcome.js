@@ -38,11 +38,20 @@ function Welcome() {
                     <h1 className="z-20 text-slate-100 font-extrabold text-3xl text-center pt-2">
                         Koło naukowe Politechniki Poznańskiej
                     </h1>{" "}
-                    <div className="flex justify-center items-center mt-8 md:flex-col">
-                        <WelcomeButton href={urls.fbURL} text="Nasz Facebook" />
+                    <div className="flex justify-center items-center mt-8 md:flex-col w-[90dvw]">
+                        <WelcomeButton
+                            href={urls.fbURL}
+                            text="Nasz Facebook"
+                            target="_blank"
+                        />
+                        <WelcomeButton
+                            href="#events"
+                            text="Aktualne wydarzenie!"
+                        />
                         <WelcomeButton
                             href={urls.registerURL}
                             text="Dołącz do nas!"
+                            target="_blank"
                         />
                     </div>
                 </div>
@@ -57,7 +66,7 @@ function WelcomeButton({ href, text, target }) {
             href={href}
             target={target}
             className="z-20 h-full flex items-center pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
-            transition hover:bg-red-800
+            transition hover:bg-red-800 text-center justify-center
             md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
         >
             <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased md:text-3xl">

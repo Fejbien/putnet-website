@@ -71,16 +71,16 @@ function LinkInsides({ text, icon }) {
 }
 
 const IconAndTextHolder = (props) => (
-    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-2 md:px-2">
+    <div className="flex flex-row items-center md:justify-start mt-6 md:mt-2 md:px-2 md:w-[90dvw]">
         {props.children}
     </div>
 );
 
 const LinkText = (props) => (
     <p
-        className="text-slate-100 font-medium text-2xl break-words
-        hover:text-orange-100 transition hover:underline 
-        md:text-center md:text-lg md:w-full"
+        className="text-slate-100 font-medium text-2xl object-contain break-words
+        hover:text-orange-100 transition hover:underline text-ellipsis overflow-hidden
+        md:text-center md:text-lg md:w-full md:pr-2 md:pl-2"
         style={{ textWrap: "balance" }}
     >
         {props.children}
