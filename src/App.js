@@ -1,4 +1,6 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./components/header";
 import Welcome from "./components/welcome";
 import AboutUs from "./components/aboutUs";
@@ -9,14 +11,34 @@ import Footer from "./components/footer";
 import Events from "./components/events";
 import Divider from "./components/divider";
 
+import EventSubpage from "./components/eventSubage";
+
 function App() {
     return (
-        <div className="bg-slate-800">
-            <Header />
-            <Welcome />
-            <PageBody />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route
+                    path="*"
+                    element={
+                        <div className="bg-slate-800">
+                            <Header />
+                            <Welcome />
+                            <PageBody />
+                            <Footer />
+                        </div>
+                    }
+                />
+                <Route
+                    path="/event"
+                    element={
+                        <div className="bg-slate-800">
+                            <Header />
+                            <EventSubpage />
+                        </div>
+                    }
+                />
+            </Routes>
+        </BrowserRouter>
     );
 }
 

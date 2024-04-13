@@ -45,7 +45,7 @@ function Welcome() {
                             target="_blank"
                         />
                         <WelcomeButton
-                            href="#events"
+                            href="/event"
                             text="Aktualne wydarzenie!"
                         />
                         <WelcomeButton
