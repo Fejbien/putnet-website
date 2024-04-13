@@ -11,7 +11,7 @@ import Footer from "./components/footer";
 import Events from "./components/events";
 import Divider from "./components/divider";
 
-import EventSubpage from "./components/eventSubage";
+import EventSubpage from "./components/eventSubPage";
 
 function App() {
     return (
