@@ -15,16 +15,16 @@ function Events() {
                     <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
                         Zapraszamy do naszego wyjątkowego wydarzenia PUT.NET
                         Software Engineering Talks, które odbędzie się już 24
-                        kwietnia o godzinie 17:00 w sali 8 w budynku Centrum
+                        kwietnia o godzinie 17:20 w sali 8 w budynku Centrum
                         Wykładowego Politechinki Poznańskiej! Przygotuj się na
                         fascynujące prezentacje firm takich jak Allegro, Sii,
-                        Microsoft, Deltologic, P&R, Google oraz organizacji JUG
-                        Poznań, które podzielą się swoją wiedzą na temat
-                        najnowszych technologii i wyzwań w świecie IT. To
-                        doskonała okazja, by poszerzyć swoją wiedzę, zdobyć
-                        inspirację oraz nawiązać cenne kontakty branżowe. A
-                        jeśli to jeszcze nie wystarczy, czeka na Ciebie także
-                        przepyszna pizza! Nie przegap tej wyjątkowej okazji
+                        Microsoft, Deltologic, Sea oraz organizacji JUG Poznań,
+                        które podzielą się swoją wiedzą na temat najnowszych
+                        technologii i wyzwań w świecie IT. To doskonała okazja,
+                        by poszerzyć swoją wiedzę, zdobyć inspirację oraz
+                        nawiązać cenne kontakty branżowe. A jeśli to jeszcze nie
+                        wystarczy, czeka na Ciebie także przepyszna pizza! Nie
+                        przegap tej wyjątkowej okazji
                     </p>
                     <a
                         href="https://forms.gle/dpBnQPk9sxEJSR166"
