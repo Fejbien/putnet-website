@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/header";
@@ -14,31 +15,35 @@ import Divider from "./components/divider";
 import EventSubpage from "./components/eventSubPage";
 
 function App() {
+    useEffect(() => {
+        const hash = window.location.hash.slice(1);
+        if (hash) {
+            const element = document.getElementById(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, []);
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route
-                    path="*"
-                    element={
-                        <div className="bg-slate-800">
-                            <Header />
-                            <Welcome />
-                            <PageBody />
-                            <Footer />
-                        </div>
-                    }
-                />
-                <Route
-                    path="/event"
-                    element={
-                        <div className="bg-slate-800">
-                            <Header />
-                            <EventSubpage />
-                        </div>
-                    }
-                />
-            </Routes>
-        </BrowserRouter>
+        <div className="bg-slate-800">
+            <Header />
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="*"
+                        element={
+                            <>
+                                <Welcome />
+                                <PageBody />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route path="/event" element={<EventSubpage />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }
 
