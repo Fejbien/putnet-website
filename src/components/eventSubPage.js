@@ -1,5 +1,7 @@
 import React from "react";
 
+import eventPUTNET from "../media/eventPUTNET.png";
+
 function EventSubPage() {
     return (
         <>
@@ -26,7 +28,7 @@ function EventSubPage() {
                             margin: "auto",
                             display: "block",
                         }}
-                        src="https://net.cs.put.poznan.pl/put-net-software-engineering-talks-2024-logo-small.png"
+                        src={eventPUTNET}
                         alt="PUT.NET Software Engineering Talks"
                     />
                     <h3 style={{ textAlign: "center" }}>
