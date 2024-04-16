@@ -26,18 +26,36 @@ function Events() {
                         wystarczy, czeka na Ciebie także przepyszna pizza! Nie
                         przegap tej wyjątkowej okazji
                     </p>
-                    <a
-                        href="https://forms.gle/dpBnQPk9sxEJSR166"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+
+                    <div
+                        className="flex flex-row justify-center items-center mt-4
+                    md:flex-col"
+                    >
+                        <a
+                            href="https://forms.gle/dpBnQPk9sxEJSR166"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
                                 transition hover:bg-red-800 justify-center
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
-                    >
-                        <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal text-center antialiased md:text-3xl">
-                            Zarejestruj się!
-                        </span>
-                    </a>
+                        >
+                            <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal text-center antialiased md:text-3xl">
+                                Zarejestruj się już teraz!
+                            </span>
+                        </a>
+                        <a
+                            href="/event"
+                            target="_self"
+                            rel="noreferrer"
+                            className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+                                transition hover:bg-red-800 justify-center
+                                md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
+                        >
+                            <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal text-center antialiased md:text-3xl">
+                                Dowiedz się więcej!
+                            </span>
+                        </a>
+                    </div>
                 </div>
                 <div className="w-1/2 flex items-center justify-center md:w-full">
                     <div className="h-fit md:pr-5 md:pl-5">

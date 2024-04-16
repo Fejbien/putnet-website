@@ -147,7 +147,7 @@ function NavButton({ href, text, onClick, target }) {
         >
             <span
                 className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal antialiased
-            md:text-lg md:text-center"
+            md:text-lg text-center"
             >
                 {text}
             </span>
