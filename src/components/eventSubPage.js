@@ -1,6 +1,6 @@
 import React from "react";
 
-import eventPUTNET from "../media/eventPUTNET.png";
+import eventPUTNET from "put-net-software-engineering-talks-2024-logo-small.png";
 
 function EventSubPage() {
     return (
