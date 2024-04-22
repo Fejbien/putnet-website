@@ -28,8 +28,8 @@ function Events() {
                     </p>
 
                     <div
-                        className="flex flex-row justify-center items-center mt-4
-                    md:flex-col"
+                        className="flex flex-row justify-center items-center mt-4 
+                        md:flex-col"
                     >
                         <a
                             href="https://forms.gle/dpBnQPk9sxEJSR166"
