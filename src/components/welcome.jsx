@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import codingVideo from "../media/coding.mp4";
 import titleLogo from "../media/titledLogo.svg";
 
-import urls from "../data/urls.js";
+import urls from "../data/urls.jsx";
 
 function Welcome() {
     const [videoHeight, setVideoHeight] = useState(window.innerHeight);

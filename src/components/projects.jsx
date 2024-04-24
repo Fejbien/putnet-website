@@ -1,6 +1,6 @@
 import React from "react";
-import projectsData from "../data/projects.js";
-import urls from "../data/urls.js";
+import projectsData from "../data/projects.jsx";
+import urls from "../data/urls.jsx";
 
 function Projects() {
     let projects = Object.keys(projectsData).map((key, index) => {

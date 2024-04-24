@@ -5,7 +5,7 @@ import mailIcon from "../media/mailIcon.svg";
 import pinIcon from "../media/pinIcon.svg";
 import discordIcon from "../media/discordIcon.svg";
 
-import urls from "../data/urls.js";
+import urls from "../data/urls.jsx";
 
 function Contact() {
     return (

@@ -5,7 +5,7 @@ import titledLogo from "../media/titledLogo.svg";
 import logo from "../media/pureLogo.svg";
 import menu from "../media/menuIcon.svg";
 
-import navs from "../data/navs.js";
+import navs from "../data/navs.jsx";
 
 function Header() {
     const handleScroll = () => {

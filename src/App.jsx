@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/header";
 
-import EventSubpage from "./components/eventSubPage";
 import HomePage from "./pages/HomePage";
+import EventSubpage from "./components/eventSubPage";
 
 function App() {
     useEffect(() => {

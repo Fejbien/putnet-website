@@ -1,7 +1,6 @@
 import React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
-import faq from "../data/faq.js";
-import PropTypes from "prop-types";
+import faq from "../data/faq.jsx";
 
 function Faq() {
     let QnAsHTML = faq.map((QnARow, index) => {
