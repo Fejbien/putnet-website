@@ -3,12 +3,7 @@ import React from "react";
 function EventSubPage() {
     return (
         <>
-	    <style>{`
-		#talks-2024 p {margin:1em;}
-	    	#talks-2024 a {text-decoration:underline;}
-	    `}</style>
             <div
-	    	id="talks-2024"
                 className="event-subpage"
                 style={{
                     fontFamily: "arial, helvetica, sans-serif",
@@ -70,7 +65,6 @@ function EventSubPage() {
                                 display: "block",
                                 color: "white",
                                 fontStyle: "italic",
-			    margin: "1em",
                             }}
                         >
                             Kliknij, aby przejść do rejestracji!
@@ -134,7 +128,7 @@ function EventSubPage() {
                                     </a>{" "}
                                     – Team Leader &amp; Senior Software Engineer
                                     @
-	    {" "}<span style={{ color: "#ff5a00" }}>
+                                    <span style={{ color: "#ff5a00" }}>
                                         Allegro
                                     </span>
                                     ,{" "}
@@ -185,7 +179,7 @@ function EventSubPage() {
                                         Mateusz Bryll
                                     </a>{" "}
                                     – Team Leader, .NET / Angular engineer @
-                                    {" "}<span style={{ color: "#ff5a00" }}>
+                                    <span style={{ color: "#ff5a00" }}>
                                         Allegro
                                     </span>
                                 </span>
@@ -348,7 +342,7 @@ function EventSubPage() {
                                         Rafał Czupryński
                                     </a>{" "}
                                     – Customer Success Account Manager @
-                                    {" "}<span style={{ color: "#7fba00" }}>
+                                    <span style={{ color: "#7fba00" }}>
                                         Microsoft
                                     </span>
                                 </span>
