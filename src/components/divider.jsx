@@ -1,5 +1,3 @@
-import React from "react";
-
 function Divider() {
     return (
         <div className="flex flex-row justify-center items-center w-full py-8">

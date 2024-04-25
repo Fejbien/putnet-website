@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import projectsData from "../data/projects.jsx";
 import urls from "../data/urls.jsx";
 
@@ -31,6 +31,13 @@ function Projects() {
     );
 }
 
+ProjectCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    linksData: PropTypes.object,
+    image: PropTypes.string,
+    underConstruction: PropTypes.bool,
+};
 function ProjectCard({
     title,
     description,

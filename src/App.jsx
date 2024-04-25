@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 
 import HomePage from "./pages/HomePage";
-import EventSubpage from "./components/eventSubPage";
 
 function App() {
     useEffect(() => {
@@ -24,7 +23,6 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="*" element={<HomePage />} />
-                    <Route path="/event" element={<EventSubpage />} />
                 </Routes>
             </BrowserRouter>
         </div>

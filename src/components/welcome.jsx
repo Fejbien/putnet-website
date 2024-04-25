@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import codingVideo from "../media/coding.mp4";
-import titleLogo from "../media/titledLogo.svg";
+import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
+import codingVideo from "../assets/coding.mp4";
+import titleLogo from "../assets/titledLogo.svg";
 
 import urls from "../data/urls.jsx";
 
@@ -45,10 +46,6 @@ function Welcome() {
                             target="_blank"
                         />
                         <WelcomeButton
-                            href="/event"
-                            text="Aktualne wydarzenie!"
-                        />
-                        <WelcomeButton
                             href={urls.registerURL}
                             text="Dołącz do nas!"
                             target="_blank"
@@ -60,6 +57,11 @@ function Welcome() {
     );
 }
 
+WelcomeButton.propTypes = {
+    href: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    target: PropTypes.string,
+};
 function WelcomeButton({ href, text, target }) {
     return (
         <a

@@ -1,13 +1,13 @@
-import React from "react";
+import PropTypes from "prop-types";
 
-import fbIcon from "../media/facebookIcon.svg";
-import mailIcon from "../media/mailIcon.svg";
-import pinIcon from "../media/pinIcon.svg";
-import discordIcon from "../media/discordIcon.svg";
-
-import urls from "../data/urls.jsx";
+import contacts from "../data/contacts";
+import urls from "../data/urls";
 
 function Contact() {
+    let contactsMap = contacts.map((contactData, index) => {
+        return <ContactsData key={index} contactData={contactData} />;
+    });
+
     return (
         <div className="flex flex-row w-full justify-center items-center relative">
             <div id="contact" className="absolute -top-20"></div>
@@ -27,40 +27,32 @@ function Contact() {
                     <h1 className="text-slate-100 text-4xl text-left md:text-center">
                         Kontakt
                     </h1>
-                    <a
-                        href={urls["addressURL"]}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <LinkInsides
-                            text="ul. Jana Pawła II 28, 61-139 Poznań"
-                            icon={pinIcon}
-                        />
-                    </a>
-                    <a href={urls["mailURL"]}>
-                        <LinkInsides
-                            text="mikolaj.diakowski@student.put.poznan.pl"
-                            icon={mailIcon}
-                        />
-                    </a>
-                    <a href={urls["fbURL"]}>
-                        <LinkInsides
-                            text="Grupa .NET Politechnika Poznańska"
-                            icon={fbIcon}
-                        />
-                    </a>
-                    <a href={urls["discordURL"]}>
-                        <LinkInsides
-                            text="Serwer discord PUT.NET"
-                            icon={discordIcon}
-                        />
-                    </a>
+                    {contactsMap}
                 </div>
             </div>
         </div>
     );
 }
 
+ContactsData.propTypes = {
+    contactData: PropTypes.shape({
+        url: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired,
+        icon: PropTypes.string.isRequired,
+    }).isRequired,
+};
+function ContactsData({ contactData }) {
+    return (
+        <a href={contactData.url} target="_blank">
+            <LinkInsides text={contactData.text} icon={contactData.icon} />
+        </a>
+    );
+}
+
+LinkInsides.propTypes = {
+    text: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+};
 function LinkInsides({ text, icon }) {
     return (
         <IconAndTextHolder>
@@ -72,7 +64,10 @@ function LinkInsides({ text, icon }) {
 
 const IconAndTextHolder = (props) => (
     <div className="flex flex-row items-center md:justify-start mt-6 md:mt-2 md:px-2 md:w-[90dvw]">
-        {props.children}
+        {
+            // eslint-disable-next-line react/prop-types
+            props.children
+        }
     </div>
 );
 
@@ -83,7 +78,10 @@ const LinkText = (props) => (
         md:text-center md:text-lg md:w-full md:pr-2 md:pl-2"
         style={{ textWrap: "balance" }}
     >
-        {props.children}
+        {
+            // eslint-disable-next-line react/prop-types
+            props.children
+        }
     </p>
 );
 

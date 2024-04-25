@@ -1,5 +1,6 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { Disclosure, Transition } from "@headlessui/react";
+
 import faq from "../data/faq.jsx";
 
 function Faq() {
@@ -20,6 +21,10 @@ function Faq() {
     );
 }
 
+QnA.propTypes = {
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
+};
 function QnA({ question, answer }) {
     return (
         <Disclosure as="div" className="mt-4 overflow-hidden">

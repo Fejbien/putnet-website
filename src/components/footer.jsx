@@ -1,6 +1,4 @@
-import React from "react";
-
-import putLogo from "../media/putLogo.png";
+import putLogo from "../assets/putLogo.png";
 
 function Footer() {
     return (

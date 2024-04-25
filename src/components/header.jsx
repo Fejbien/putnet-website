@@ -1,9 +1,10 @@
-import React, { useEffect, useState, Fragment } from "react";
+import PropTypes from "prop-types";
+import { useEffect, useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
-import titledLogo from "../media/titledLogo.svg";
-import logo from "../media/pureLogo.svg";
-import menu from "../media/menuIcon.svg";
+import titledLogo from "../assets/titledLogo.svg";
+import logo from "../assets/pureLogo.svg";
+import menu from "../assets/menuIcon.svg";
 
 import navs from "../data/navs.jsx";
 
@@ -136,6 +137,12 @@ function Header() {
     );
 }
 
+NavButton.propTypes = {
+    href: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+    target: PropTypes.string,
+};
 function NavButton({ href, text, onClick, target }) {
     return (
         <a

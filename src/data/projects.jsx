@@ -1,4 +1,4 @@
-import PUTNETLogo from "../media/pureLogo.svg";
+import PUTNETLogo from "../assets/pureLogo.svg";
 
 /*
 Adding a project: 
