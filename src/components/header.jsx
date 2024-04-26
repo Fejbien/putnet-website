@@ -32,13 +32,25 @@ function Header() {
         }
     };
 
+    const handleResize = () => {
+        if (window.innerWidth < 767) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+            setIsOpen(false);
+        }
+    };
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, {
             passive: true,
         });
 
+        window.addEventListener("resize", handleResize);
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
@@ -57,6 +69,7 @@ function Header() {
     });
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     return (
         <header
@@ -64,35 +77,53 @@ function Header() {
         items-center bg-slate-900 shadow-2xl -translate-y-16 transition"
         >
             <div className="flex pl-10 md:hidden">
-                <img
-                    src={logo}
-                    alt="PUT.NET Logo"
-                    className="h-16"
-                    loading="lazy"
-                />
-            </div>
-            <div className="flex pr-10 h-full md:hidden">{navigations}</div>
-
-            <div className="hidden md:flex md:justify-center md:items-center md:h-full md:w-full">
-                <div className="md:flex md:w-full md:h-full md:justify-between md:items-center">
-                    <button
-                        onClick={() => setIsOpen(true)}
-                        className="md:flex md:w-auto"
-                    >
-                        <img src={menu} alt="menu icon" loading="lazy"></img>
-                    </button>
-                    <div className="md:flex md:h-full md:justify-center md:items-center">
-                        <img src={logo} alt="logo" className="h-[80%]"></img>
-                    </div>
-
+                <a href="/#">
                     <img
-                        src={menu}
-                        alt="menu icon"
-                        className="invisible"
+                        src={logo}
+                        alt="PUT.NET Logo"
+                        className="h-16"
                         loading="lazy"
-                    ></img>
-                </div>
+                    />
+                </a>
             </div>
+
+            {!isMobile && (
+                <div className="flex pr-10 h-full">{navigations}</div>
+            )}
+
+            {isMobile && (
+                <div className="md:flex md:justify-center md:items-center md:h-full md:w-full">
+                    <div className="md:flex md:w-full md:h-full md:justify-between md:items-center">
+                        <button
+                            onClick={() => setIsOpen(true)}
+                            className="md:flex md:w-auto"
+                        >
+                            <img
+                                src={menu}
+                                alt="menu icon"
+                                loading="lazy"
+                            ></img>
+                        </button>
+                        <div className="md:flex md:h-full md:justify-center md:items-center">
+                            <a href="/#" className="h-[80%]">
+                                <img
+                                    src={logo}
+                                    alt="logo"
+                                    className="h-[100%]"
+                                    loading="lazy"
+                                ></img>
+                            </a>
+                        </div>
+
+                        <img
+                            src={menu}
+                            alt="menu icon"
+                            className="invisible"
+                            loading="lazy"
+                        ></img>
+                    </div>
+                </div>
+            )}
 
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog

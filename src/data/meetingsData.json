@@ -1,12 +1,5 @@
-[
-    {
-        "id": "1233064272909566053",
-        "name": "Sportkanie test (topic)",
-        "description": "opis spotkania opis opis test test koniec",
-        "scheduled_start_time": "2024-06-20T16:00:00+00:00",
-        "scheduled_end_time": "2024-06-20T18:00:00+00:00",
-        "entity_metadata": {
-            "location": "DS1"
-        }
-    }
-]
+{
+    "message": "You are being rate limited.",
+    "retry_after": 1.4,
+    "global": false
+}
