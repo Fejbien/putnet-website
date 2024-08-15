@@ -1,4 +1,5 @@
 import PUTNETLogo from "../assets/pureLogo.svg";
+import AtariMuzeumLogo from "../assets/atariMuzeumLogo.svg";
 
 /*
 Adding a project: 
@@ -39,9 +40,11 @@ const projectsData = {
     "Katalog eksponatów Muzeum Atari": {
         description:
             "System katalogowania eksponatów dla Muzeum Atari w Poznaniu",
+        image: AtariMuzeumLogo,
         underConstruction: true,
         links: {
             Strona: "https://atarimuzeum.pl/",
+            GitHub: "https://github.com/Fejbien/atari-museum",
         },
     },
     "Studencki USOS": {

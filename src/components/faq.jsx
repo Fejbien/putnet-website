@@ -45,7 +45,7 @@ function QnA({ question, answer }) {
             >
                 <Disclosure.Panel
                     className="px-4 pt-4 text-xl text-slate-100 text-center"
-                    style={{ "text-wrap": "balance" }}
+                    style={{ textWrap: "balance" }}
                 >
                     {answer}
                 </Disclosure.Panel>
