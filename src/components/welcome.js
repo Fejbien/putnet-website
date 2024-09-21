@@ -44,10 +44,10 @@ function Welcome() {
                             text="Nasz Facebook"
                             target="_blank"
                         />
-                        <WelcomeButton
+                        {/* <WelcomeButton
                             href="/event"
                             text="Aktualne wydarzenie!"
-                        />
+                        /> */}
                         <WelcomeButton
                             href={urls.registerURL}
                             text="Dołącz do nas!"

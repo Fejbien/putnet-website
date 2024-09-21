@@ -1,4 +1,5 @@
 import PUTNETLogo from "../media/pureLogo.svg";
+import UsosPUTLogo from "../media/usosPutLogo.png";
 
 /*
 Adding a project: 
@@ -22,18 +23,14 @@ Adding a project:
 */
 
 const projectsData = {
-    "PUT.NET": {
+    "Studencki USOS": {
         description:
-            "Strona internetowa koła naukowego PUT.NET Politechniki Poznańskiej",
+            "Odpowiednik Mobilnego USOS'a, od studentów dla studentów. Pomijając funkcje typowe dla USOSa w trakcie planowania/realizacji są również 2 moduły, których nie ma w Mobilnym USOSie, czyli mapa PP oraz Europejska Karta Studenta. ",
         links: {
-            Strona: "https://net.cs.put.poznan.pl",
-            GitHub: "https://github.com/Fejbien/putnet-website",
+            "Sklep play":
+                "https://play.google.com/store/apps/details?id=com.ovrbtn.studencki_usos_put&hl=en-US&ah=N9G1_6Ubnv2BbZvApa0rgIKnu5Y",
         },
-        image: PUTNETLogo,
-        underConstruction: false,
-    },
-    TimeTracko: {
-        description: "Aplikacja do śledzenia czasu pracy.",
+        image: UsosPUTLogo,
         underConstruction: true,
     },
     "Katalog eksponatów Muzeum Atari": {
@@ -44,17 +41,28 @@ const projectsData = {
             Strona: "https://atarimuzeum.pl/",
         },
     },
-    "Studencki USOS": {
-        description: "Studencki USOS dla Politechniki Poznańskiej",
-        underConstruction: true,
+    "PUT.NET": {
+        description:
+            "Strona internetowa koła naukowego PUT.NET Politechniki Poznańskiej",
+        links: {
+            Strona: "https://net.cs.put.poznan.pl",
+            GitHub: "https://github.com/Fejbien/putnet-website",
+        },
+        image: PUTNETLogo,
+        underConstruction: false,
     },
     "eMapa Politechniki Poznańskiej": {
-        description: "Mapa Politechniki Poznańskiej",
+        description:
+            "Jak nazwa mówi, mapa Politechniki Poznańskiej. Oprócz mapy budynków w kampusie pojawią się również plany każdego z pięter wraz z wyszukiwarką sali czy przekierowaniem z planu zajęć wprost do lokalizacji danej sali. Już nigdy się nie zgubicie!",
         underConstruction: true,
     },
 
     "Europejska Karta Studenta": {
         description: "Europejska Karta Studenta",
+        underConstruction: true,
+    },
+    TimeTracko: {
+        description: "Aplikacja do śledzenia czasu pracy.",
         underConstruction: true,
     },
 };

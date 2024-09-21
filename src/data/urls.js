@@ -6,6 +6,8 @@ const urls = {
     mapURL: "https://www.google.com/maps/embed/v1/place?q=Ds1+poznan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
     discordURL: "https://discord.gg/zKkKxy7Rhf",
     registerURL: "https://forms.gle/32xuoboD1VZsZUbm8",
+    eventImagesURL2024:
+        "https://www.facebook.com/media/set/?set=a.969008511894234",
 };
 
 export default urls;

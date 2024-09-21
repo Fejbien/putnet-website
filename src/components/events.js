@@ -1,6 +1,7 @@
 import React from "react";
 
 import eventLogo from "../media/eventLogo.png";
+import urls from "../data/urls";
 
 function Events() {
     return (
@@ -13,18 +14,27 @@ function Events() {
                         PUT.NET Software Engineering Talks
                     </h1>
                     <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
-                        Zapraszamy do naszego wyjątkowego wydarzenia PUT.NET
-                        Software Engineering Talks, które odbędzie się już 24
-                        kwietnia o godzinie 17:20 w sali 8 w budynku Centrum
-                        Wykładowego Politechinki Poznańskiej! Przygotuj się na
-                        fascynujące prezentacje firm takich jak Allegro, Sii,
-                        Microsoft, Deltologic, Sea oraz organizacji JUG Poznań,
-                        które podzielą się swoją wiedzą na temat najnowszych
-                        technologii i wyzwań w świecie IT. To doskonała okazja,
-                        by poszerzyć swoją wiedzę, zdobyć inspirację oraz
-                        nawiązać cenne kontakty branżowe. A jeśli to jeszcze nie
-                        wystarczy, czeka na Ciebie także przepyszna pizza! Nie
-                        przegap tej wyjątkowej okazji
+                        Dziękujemy za udział w wydarzeniu PUT.NET Software
+                        Engineering Talks, które miało miejsce 24 kwietnia 2024
+                        Politechniki Poznańskiej. Było to inspirujące spotkanie,
+                        pełne wartościowych prezentacji od firm takich jak
+                        Allegro, Sii, Microsoft, Deltologic, Sea oraz JUG
+                        Poznań, które podzieliły się najnowszymi
+                        technologicznymi trendami. Nie zabrakło również okazji
+                        do networkingu i pysznej pizzy!
+                        <br />
+                        <br />
+                        Cieszymy się z Waszej obecności i z radością
+                        informujemy, że są szanse na kolejne edycje tego
+                        wydarzenia. Bądźcie na bieżąco! Na naszym{" "}
+                        <a
+                            href={urls.fbURL}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline hover:text-orange-300"
+                        >
+                            Facebooku
+                        </a>
                     </p>
 
                     <div
@@ -32,27 +42,15 @@ function Events() {
                         md:flex-col"
                     >
                         <a
-                            href="https://forms.gle/dpBnQPk9sxEJSR166"
+                            href={urls.eventImagesURL2024}
                             target="_blank"
                             rel="noreferrer"
                             className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
                                 transition hover:bg-red-800 justify-center
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
                         >
-                            <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal text-center antialiased md:text-3xl">
-                                Zarejestruj się już teraz!
-                            </span>
-                        </a>
-                        <a
-                            href="/event"
-                            target="_self"
-                            rel="noreferrer"
-                            className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
-                                transition hover:bg-red-800 justify-center
-                                md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
-                        >
-                            <span className="text-slate-100 uppercase text-m tracking-widest leading-normal font-normal text-center antialiased md:text-3xl">
-                                Dowiedz się więcej!
+                            <span className="text-slate-100 uppercase text-lg tracking-widest leading-normal font-normal text-center antialiased md:text-xl">
+                                Zobacz zdjęcia z minionego wydarzenia!
                             </span>
                         </a>
                     </div>
