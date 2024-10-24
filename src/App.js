@@ -11,7 +11,8 @@ import Footer from "./components/footer";
 import Events from "./components/events";
 import Divider from "./components/divider";
 
-import EventSubpage from "./components/eventSubPage";
+import EventPage from "./pages/Event";
+import RedirectPage from "./pages/Redirect";
 
 function App() {
     useEffect(() => {
@@ -25,7 +26,7 @@ function App() {
     }, []);
 
     return (
-        <div className="bg-slate-800">
+        <div className="bg-slate-800 min-h-[100dvh]">
             <Header />
             <BrowserRouter>
                 <Routes>
@@ -39,7 +40,8 @@ function App() {
                             </>
                         }
                     />
-                    <Route path="/event" element={<EventSubpage />} />
+                    <Route path="/redirect/:id" element={<RedirectPage />} />
+                    <Route path="/event" element={<EventPage />} />
                 </Routes>
             </BrowserRouter>
         </div>

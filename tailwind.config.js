@@ -9,6 +9,12 @@ module.exports = {
                     "100dvh",
                 ],
             },
+            width: {
+                screen: [
+                    "100vw /* fallback for Opera, IE and etc. */",
+                    "100dvw",
+                ],
+            },
         },
         screens: {
             "2xl": { max: "1535px" },
