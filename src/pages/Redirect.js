@@ -5,7 +5,7 @@ import PureLogo from "../media/pureLogo.svg";
 const redirects = {
     1: [
         "https://forms.gle/32xuoboD1VZsZUbm8",
-        "Jestes wlasnie przekierowywany na stronę rejestracji!",
+        "Jesteś właśnie przekierowywany na stronę rejestracji!",
     ],
 };
 
