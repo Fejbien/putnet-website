@@ -1,6 +1,6 @@
 # PUT.NET site prototype
 It's a rewrite in react
-[Site](https://orange-sky-071d93c03.4.azurestaticapps.net)
+[Site](https://putnet-website.vercel.app)
 :D
 
 ### `npm install`
