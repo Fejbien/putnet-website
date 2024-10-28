@@ -23,7 +23,7 @@ const faq = [
         </>,
     ],
     [
-        <>Jak do nasz dołączyć?</>,
+        <>Jak do nas dołączyć?</>,
         <>
             Zapraszamy jak najczęściej na nasze spotkania! Informacje o nim
             znajdziecie na naszym Discordzie, a także na social-mediach Koła.
