@@ -51,20 +51,6 @@ const projectsData = {
         image: PUTNETLogo,
         underConstruction: false,
     },
-    "eMapa Politechniki Poznańskiej": {
-        description:
-            "Jak nazwa mówi, mapa Politechniki Poznańskiej. Oprócz mapy budynków w kampusie pojawią się również plany każdego z pięter wraz z wyszukiwarką sali czy przekierowaniem z planu zajęć wprost do lokalizacji danej sali. Już nigdy się nie zgubicie!",
-        underConstruction: true,
-    },
-
-    "Europejska Karta Studenta": {
-        description: "Europejska Karta Studenta",
-        underConstruction: true,
-    },
-    TimeTracko: {
-        description: "Aplikacja do śledzenia czasu pracy.",
-        underConstruction: true,
-    },
 };
 
 export default projectsData;
