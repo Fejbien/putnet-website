@@ -54,7 +54,7 @@ const faq = [
                 rel="noreferrer"
             >
                 Discordzie
-            </a>
+            </a>{" "}
             i{" "}
             <a
                 href={urls.linkedInURL}

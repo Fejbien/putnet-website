@@ -45,6 +45,8 @@ function ProjectCard({
                 key={index}
                 href={linksData[key]}
                 className="underline text-lg font-bold hover:text-orange-100"
+                target="_blank"
+                rel="noreferrer"
             >
                 {key}
             </a>
