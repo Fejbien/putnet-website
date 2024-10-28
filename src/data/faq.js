@@ -18,7 +18,7 @@ const faq = [
     [
         <>Czy jeśli nie studiuję na Politechnice też mogę przyjść?</>,
         <>
-            "Oczywiście, że tak. Zapraszamy wszystkich, również osoby spoza
+            Oczywiście, że tak. Zapraszamy wszystkich, również osoby spoza
             Politechniki.
         </>,
     ],
