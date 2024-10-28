@@ -1,21 +1,15 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import PureLogo from "../media/pureLogo.svg";
-
-const redirects = {
-    1: [
-        "https://forms.gle/32xuoboD1VZsZUbm8",
-        "Jesteś właśnie przekierowywany na stronę rejestracji!",
-    ],
-};
+import Redirects from "../data/redirects.js";
 
 const Redirect = () => {
     const { id } = useParams();
     console.log(id);
 
     useEffect(() => {
-        if (id in redirects) {
-            const url = redirects[id][0];
+        if (id in Redirects) {
+            const url = Redirects[id][0];
             window.location.href = url;
         } else {
             window.location.href = "/";
@@ -23,7 +17,7 @@ const Redirect = () => {
     }, [id]);
 
     let show = "Nie znaleziono przekierowania powracanie...";
-    if (id in redirects) show = redirects[id][1];
+    if (id in Redirects) show = Redirects[id][1];
 
     return (
         <div className="flex w-screen h-screen justify-center items-start">
