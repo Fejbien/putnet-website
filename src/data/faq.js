@@ -1,3 +1,5 @@
+import urls from "./urls";
+
 /*
 Adding a question:
     [
@@ -25,17 +27,44 @@ const faq = [
     [
         <>Jak do nas dołączyć?</>,
         <>
-            Zapraszamy jak najczęściej na nasze spotkania! Informacje o nim
-            znajdziecie na naszym Discordzie, a także na social-mediach Koła.
-            Poprzez wkład i zaangażowanie w życie Koła szybko staniecie się jego
-            członkami!
-            <br />
+            Nic prostszego! Zapisz się już dziś i wypełnij nasz{" "}
             <a
                 href="/redirect/1"
                 className="underline hover:text-orange-100 text-red-500"
+                target="_blank"
+                rel="noreferrer"
             >
-                Dołącz do nas!
+                formularz!
+            </a>{" "}
+            Następny krok to regularne uczestniczenie w naszych spotkaniach.
+            Wszelkie informacje będą na bieżąco pojawiały się w social mediach:{" "}
+            <a
+                href={urls.fbURL}
+                className="underline hover:text-orange-100 text-red-500"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Facebooku
             </a>
+            ,{" "}
+            <a
+                href={urls.discordURL}
+                className="underline hover:text-orange-100 text-red-500"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Discordzie
+            </a>
+            i{" "}
+            <a
+                href={urls.linkedInURL}
+                className="underline hover:text-orange-100 text-red-500"
+                target="_blank"
+                rel="noreferrer"
+            >
+                LinkedIn
+            </a>
+            ! Zapraszamy!
         </>,
     ],
     [
