@@ -38,7 +38,10 @@ const projectsData = {
             "System katalogowania eksponatów dla Muzeum Atari w Poznaniu",
         underConstruction: true,
         links: {
-            Strona: "https://atarimuzeum.pl/",
+            Muzeam: "https://atarimuzeum.pl/",
+            GitHub: "https://github.com/Fejbien/atari-museum",
+            "Podgląd nowej wersji":
+                "https://atari-museum-git-preview-fejbiens-projects.vercel.app",
         },
     },
     "PUT.NET": {
