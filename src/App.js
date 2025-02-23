@@ -11,7 +11,8 @@ import Footer from "./components/footer";
 import Events from "./components/events";
 import Divider from "./components/divider";
 
-import EventPage from "./pages/Event";
+import Event2024Page from "./pages/old/Event2024";
+import Event2025Page from "./pages/Event2025";
 import RedirectPage from "./pages/Redirect";
 
 function App() {
@@ -41,7 +42,8 @@ function App() {
                         }
                     />
                     <Route path="/redirect/:id" element={<RedirectPage />} />
-                    <Route path="/event" element={<EventPage />} />
+                    <Route path="/event2024" element={<Event2024Page />} />
+                    <Route path="/event2025" element={<Event2025Page />} />
                 </Routes>
             </BrowserRouter>
         </div>

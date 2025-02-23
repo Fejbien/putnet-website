@@ -18,10 +18,10 @@ const navs = {
     kontakt: { link: "/#contact", target: "_self" },
     projekty: { link: "/#projects", target: "_self" },
     faq: { link: "/#faq", target: "_self" },
-    "dołącz do nas!": {
+    /*"dołącz do nas!": {
         link: urls.registerURL,
         target: "_blank",
-    },
+    },*/
 };
 
 export default navs;

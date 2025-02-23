@@ -14,38 +14,32 @@ function Events() {
                         PUT.NET Software Engineering Talks
                     </h1>
                     <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
-                        Dziękujemy za udział w wydarzeniu PUT.NET Software
-                        Engineering Talks, które miało miejsce 24 kwietnia 2024
-                        Politechniki Poznańskiej. Było to inspirujące spotkanie,
-                        pełne wartościowych prezentacji od firm takich jak
-                        Allegro, Sii, Microsoft, Deltologic, Sea oraz JUG
-                        Poznań, które podzieliły się najnowszymi
-                        technologicznymi trendami. Nie zabrakło również okazji
-                        do networkingu i pysznej pizzy!
-                        <br />
-                        <br />
-                        Cieszymy się z Waszej obecności i z radością
-                        informujemy, że są szanse na kolejne edycje tego
-                        wydarzenia. Bądźcie na bieżąco! Na naszym{" "}
-                        <a
-                            href={urls.fbURL}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="underline hover:text-orange-300"
-                        >
-                            Facebooku
-                        </a>
+                        Zapraszmy ble ble opis tez by trzeba
                     </p>
-
-                    <div
-                        className="flex flex-row justify-center items-center mt-4 
-                        md:flex-col"
-                    >
+                    <div className="flex flex-col justify-center items-center mt-4 ">
                         <a
                             href={urls.eventImagesURL2024}
                             target="_blank"
                             rel="noreferrer"
-                            className="z-21 h-full flex items-center mt-6 pl-4 pr-4 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+                            className="z-21 h-full w-full flex items-center px-4 py-2 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+                                transition hover:bg-red-800 justify-center
+                                md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
+                        >
+                            <span className="text-slate-100 uppercase text-lg tracking-widest leading-normal font-normal text-center antialiased md:text-xl">
+                                Aktualne wydarzenie!
+                            </span>
+                        </a>
+                    </div>
+                    <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
+                        A w czasie czekania mozecie zobaczyc zdjecia z
+                        poprzedniego wydarzenia ble ble no tutaj opis trzeba
+                    </p>
+                    <div className="flex flex-col justify-center items-center mt-4 ">
+                        <a
+                            href={urls.eventImagesURL2024}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="z-21 h-full w-full flex items-center px-4 py-2 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
                                 transition hover:bg-red-800 justify-center
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
                         >
