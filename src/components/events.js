@@ -2,6 +2,8 @@ import React from "react";
 
 import eventLogo from "../media/eventLogo.png";
 import urls from "../data/urls";
+import divider from "../components/divider";
+import Divider from "../components/divider";
 
 function Events() {
     return (
@@ -14,11 +16,16 @@ function Events() {
                         PUT.NET Software Engineering Talks
                     </h1>
                     <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
-                        Zapraszmy ble ble opis tez by trzeba
+                        📢 Zapraszamy na kolejną edycję PUT.NET Software
+                        Engineering Talks! 🚀 Dołącz do nas na Politechnice
+                        Poznańskiej i bądź częścią inspirujących prezentacji,
+                        najnowszych trendów technologicznych oraz
+                        niezapomnianego networkingu. Nie zabraknie także pysznej
+                        pizzy! 🍕
                     </p>
-                    <div className="flex flex-col justify-center items-center mt-4 ">
+                    <div className="flex flex-row justify-center items-center mt-4 w-full md:flex-col">
                         <a
-                            href={urls.eventImagesURL2024}
+                            href="/event2025"
                             target="_blank"
                             rel="noreferrer"
                             className="z-21 h-full w-full flex items-center px-4 py-2 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
@@ -26,13 +33,26 @@ function Events() {
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
                         >
                             <span className="text-slate-100 uppercase text-lg tracking-widest leading-normal font-normal text-center antialiased md:text-xl">
-                                Aktualne wydarzenie!
+                                Wiecej informacji
+                            </span>
+                        </a>
+                        <a
+                            href={urls.eventURL2025}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="z-21 h-full w-full flex items-center px-4 py-2 rounded-lg text-2xl border-2 border-slate-100 m-2 bg-slate-950
+                                transition hover:bg-red-800 justify-center
+                                md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
+                        >
+                            <span className="text-slate-100 uppercase text-lg tracking-widest leading-normal font-normal text-center antialiased md:text-xl">
+                                Rejestracja
                             </span>
                         </a>
                     </div>
+                    <Divider />
                     <p className="text-slate-100 text-lg text-center pt-4 md:px-2">
-                        A w czasie czekania mozecie zobaczyc zdjecia z
-                        poprzedniego wydarzenia ble ble no tutaj opis trzeba
+                        A w czasie oczekiwania na wydarzenie możecie zobaczyć
+                        zdjęcia z poprzedniej edycji
                     </p>
                     <div className="flex flex-col justify-center items-center mt-4 ">
                         <a
@@ -44,7 +64,7 @@ function Events() {
                                 md:w-[90%] md:text-center md:pt-1 md:pb-1 md:text-lg"
                         >
                             <span className="text-slate-100 uppercase text-lg tracking-widest leading-normal font-normal text-center antialiased md:text-xl">
-                                Zobacz zdjęcia z minionego wydarzenia!
+                                Zdjęcia z poprzedniego wydarzenia
                             </span>
                         </a>
                     </div>

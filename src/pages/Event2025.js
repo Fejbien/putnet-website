@@ -64,7 +64,7 @@ function EventSubPage() {
                             </span>
                         </h3>
                         <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfP_TQ4tEUc9eTo8u0uE5L_lQMhB4Jl-MhD1A53kw3zRhvldA/viewform"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSd4lOJFCG-e99xDroy86qzu97aE0FFNRCBsQpBTgm-HM3uG8A/viewform"
                             style={{
                                 textAlign: "center",
                                 display: "block",
@@ -201,7 +201,26 @@ function EventSubPage() {
                                         fontWeight: "normal",
                                     }}
                                 >
-                                    Opis do dodania
+                                    Zapraszamy na wystąpienie, podczas którego
+                                    poznasz praktyczne aspekty wykorzystania
+                                    zwinności w budowaniu skutecznych zespołów.
+                                    W trakcie prezentacji dowiesz się jakie
+                                    czynniki decydują o powodzeniu zespołów w
+                                    dynamicznym środowisku pracy. Przedstawię
+                                    techniki budowania psychologicznego
+                                    bezpieczeństwa w zespole. Poznasz sprawdzone
+                                    narzędzia wspierające samoorganizację i
+                                    autonomię. Omówimy praktyczne aspekty
+                                    komunikacji i współpracy. Prezentacja
+                                    zakończy się zestawem konkretnych wskazówek,
+                                    które będziesz mógł zastosować w swoich
+                                    przyszłych projektach. Niezależnie od tego,
+                                    czy masz już doświadczenie ze zwinnością,
+                                    czy dopiero zaczynasz swoją przygodę z
+                                    Agile, to wystąpienie dostarczy Ci
+                                    wartościowej wiedzy, którą wykorzystasz w
+                                    przyszłej karierze zawodowej. Zapraszamy do
+                                    aktywnego udziału. poniżej krótki opis:
                                 </p>
                             </li>
                             <li
@@ -249,7 +268,27 @@ function EventSubPage() {
                                         fontWeight: "normal",
                                     }}
                                 >
-                                    Brak opisu
+                                    W naszej prezentacji pokażemy, jak w
+                                    praktyce zbudować czytelną i elastyczną
+                                    aplikację ASP.NET Core w formie modularnego
+                                    monolitu. Zaczynając od podstaw, omówimy
+                                    sposób podziału aplikacji na osobne moduły i
+                                    zarządzania nimi, a następnie przejdziemy do
+                                    tego, w jaki sposób można taki moduł
+                                    wydzielić do mikroserwisu, gdy zajdzie
+                                    potrzeba skalowania lub dalszego rozwoju.
+                                    Podzielimy się również praktycznymi
+                                    wskazówkami dotyczącymi obsługi wyjątków,
+                                    walidacji, a także kluczowymi zasadami
+                                    architektonicznymi (takimi jak SOLID, wzorce
+                                    projektowe czy coupling & cohesion). Nie
+                                    zabraknie przykładów kodu, w tym przydatnych
+                                    podczas realizacji projektów uczelnianych
+                                    czy rozwiązywania zadań rekrutacyjnych. Na
+                                    koniec pokażemy, jak podejść do tworzenia
+                                    bibliotek w taki sposób, by były łatwe w
+                                    utrzymaniu, a zarazem otwarte na dalsze
+                                    rozszerzenia.
                                 </p>
                             </li>
                             <li
@@ -343,7 +382,7 @@ function EventSubPage() {
                             Do zobaczenia na wydarzeniu! &#128075;
                         </strong>
                         <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfP_TQ4tEUc9eTo8u0uE5L_lQMhB4Jl-MhD1A53kw3zRhvldA/viewform"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSd4lOJFCG-e99xDroy86qzu97aE0FFNRCBsQpBTgm-HM3uG8A/viewform"
                             style={{
                                 display: "block",
                                 marginTop: "28px",

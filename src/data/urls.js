@@ -10,6 +10,8 @@ const urls = {
         "https://docs.google.com/forms/d/e/1FAIpQLSdLdxgS65qyNpxujB__R3EXcg_y548POIIyfoa0ex0FRC1Qcw/viewform",
     eventImagesURL2024:
         "https://www.facebook.com/media/set/?set=a.969008511894234",
+    eventURL2025:
+        "https://docs.google.com/forms/d/e/1FAIpQLSd4lOJFCG-e99xDroy86qzu97aE0FFNRCBsQpBTgm-HM3uG8A/viewform",
 };
 
 export default urls;
