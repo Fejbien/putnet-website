@@ -49,7 +49,7 @@ function EventSubPage() {
                             Środa, 26 marca, od 18:00
                         </h3>
                         <h3 style={{ textAlign: "center" }}>
-                            Sala 8 Centrum Wykładowego
+                            Sala 1 Centrum Wykładowego
                             <br />
                             Politechniki Poznańskiej
                             <span
@@ -60,7 +60,8 @@ function EventSubPage() {
                                     color: "#999",
                                 }}
                             >
-                                (pierwsze piętro po prawej stronie budynku)
+                                (pierwsza sala wykładowa po prawej stronie
+                                budynku)
                             </span>
                         </h3>
                         <a
@@ -90,8 +91,8 @@ function EventSubPage() {
                             umiejętności twardych oraz miękkich, zawarcia nowych
                             znajomości oraz poznania ścieżek kariery i rozwoju w
                             IT. Specjalnie dla Was poprosiliśmy renomowane
-                            firmy, takie jak Allegro czy Microsoft, aby
-                            wygłosili prelekcje na ważne informatyczne tematy!
+                            firmy, takie jak Allegro czy Sii aby wygłosili
+                            prelekcje na ważne informatyczne tematy!
                         </p>
                         <p>
                             Nasze spotkanie to idealna okazja do posłuchania
@@ -169,8 +170,8 @@ function EventSubPage() {
                                     fontWeight: "bold",
                                 }}
                             >
-                                Praktyczne zastosowanie zwinności (agile) w
-                                budowaniu
+                                Praktyczne zastosowanie zwinności (Agile) w
+                                budowaniu efektywnych zespołów
                                 <span
                                     style={{
                                         fontWeight: "normal",
@@ -230,7 +231,8 @@ function EventSubPage() {
                                     fontWeight: "bold",
                                 }}
                             >
-                                Brak tytulu
+                                Dobre praktyki wpływające na czytelność kodu na
+                                przykładzie aplikacji ASP.NET Core
                                 <span
                                     style={{
                                         fontWeight: "normal",
@@ -240,13 +242,6 @@ function EventSubPage() {
                                         color: "#eee",
                                     }}
                                 >
-                                    <a
-                                        style={{ color: "white" }}
-                                        href="https://www.linkedin.com/in/łukasz-strep-433935172/"
-                                    >
-                                        Łukasz Strep
-                                    </a>{" "}
-                                    – Software Engineer i{" "}
                                     <a
                                         style={{ color: "white" }}
                                         href="https://www.linkedin.com/in/mateusz-bryll/"
@@ -298,7 +293,7 @@ function EventSubPage() {
                                     fontWeight: "bold",
                                 }}
                             >
-                                Nie ma tytulu
+                                Dlaczego nie rozumiesz swojego pracodawcy?
                                 <span
                                     style={{
                                         fontWeight: "normal",
@@ -325,7 +320,18 @@ function EventSubPage() {
                                         fontWeight: "normal",
                                     }}
                                 >
-                                    Brak opisu
+                                    W prezentacji zestawimy perspektywę firmy IT
+                                    z perspektywą studenta w temacie rekrutacji
+                                    i pierwszej pracy na pozycji stażysty czy
+                                    juniora. Pokażemy, gdzie występują różnice w
+                                    podejściu i opiniach, popierając to
+                                    badaniami na ponad 250 studentach i 10
+                                    firmach IT. Przedstawimy praktyczne
+                                    wskazówki, jak zwiększyć swoją skuteczność w
+                                    rekrutacji oraz jak lepiej odnaleźć się w
+                                    środowisku branżowym. Opowiemy też o tym,
+                                    dlaczego kompetencje miękkie zyskują na
+                                    znaczeniu i jak ich się uczyć.
                                 </p>
                             </li>
                             <li
@@ -353,7 +359,7 @@ function EventSubPage() {
                                         Jan Pieczykolan
                                     </a>{" "}
                                     – Head of IT Development @{" "}
-                                    <span style={{ color: "#7fba00" }}>
+                                    <span style={{ color: "#FF0000" }}>
                                         Santander
                                     </span>
                                 </span>
