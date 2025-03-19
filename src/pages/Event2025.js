@@ -352,13 +352,8 @@ function EventSubPage() {
                                         color: "#eee",
                                     }}
                                 >
-                                    <a
-                                        style={{ color: "white" }}
-                                        href="https://www.linkedin.com/in/janpieczykolan/"
-                                    >
-                                        Jan Pieczykolan
-                                    </a>{" "}
-                                    – Head of IT Development @{" "}
+                                    <a style={{ color: "white" }} href=""></a>
+                                    {"Jakub Urban "} @{" "}
                                     <span style={{ color: "#FF0000" }}>
                                         Santander
                                     </span>
